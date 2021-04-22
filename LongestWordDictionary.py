@@ -5,7 +5,7 @@ If there is no possible result, return the empty string.
 '''
 
 def findLongestWord(s, dictionary):
-    #Sort dictionary by length of words in reverse order. If the lengths are equal sort them by lexicographical order
+    #Sort dictionary by length of words in reverse order. If the lengths are equal, sort them by lexicographical order.
     dictionary.sort(key=lambda x: (-len(x), x))
     for word in dictionary:
         #For each word check if it satisfies the condition
