@@ -14,6 +14,7 @@ def heightTree(root):
         return 0
     # Maximum height is root(1) + maximum of height of left and right trees.
     return max(heightTree(root.left), heightTree(root.right)) + 1
+
 if __name__ == '__main__':
     root = TreeNode(10)
     root.left = TreeNode(5)
