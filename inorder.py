@@ -23,3 +23,4 @@ if __name__ == '__main__':
     root.left.right = TreeNode(5)
 
     inorder(root)
+    # Returns 4 2 5 1 3 
