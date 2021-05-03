@@ -22,4 +22,6 @@ if __name__ == '__main__':
     root.left.left.right.right = TreeNode(15)
     root.right = TreeNode(20)
     root.right.left = TreeNode(2)
+
     print(heightTree(root))
+    # Returns 5
