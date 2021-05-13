@@ -38,6 +38,9 @@ def findSubsets3(A):
     return result
 
 def findSubsets4(A):
+    """
+    Using bitwise operators
+    """
     result = []
     for mask in range(2 ** len(A)):
         temp = []
