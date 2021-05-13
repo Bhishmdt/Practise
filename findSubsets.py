@@ -37,6 +37,16 @@ def findSubsets3(A):
 
     return result
 
+def findSubsets4(A):
+    result = []
+    for mask in range(2 ** len(A)):
+        temp = []
+        for i in range(len(A)):
+            if mask >> i & 1:
+                temp.append(A[i])
+        result.append(temp)
+    return result
+
 if __name__ == '__main__':
     A = [2, 1, 4, 5]
     print(findSubsets(A))
@@ -49,3 +59,7 @@ if __name__ == '__main__':
     A = [2, 1, 4, 5]
     print(findSubsets3(A))
     # [[], [2], [1], [4], [5], [2, 1], [2, 4], [2, 5], [1, 4], [1, 5], [4, 5], [2, 1, 4], [2, 1, 5], [2, 4, 5], [1, 4, 5], [2, 1, 4, 5]]
+
+    A = [2, 1, 4, 5]
+    print(findSubsets4(A))
+    # [[], [2], [1], [2, 1], [4], [2, 4], [1, 4], [2, 1, 4], [5], [2, 5], [1, 5], [2, 1, 5], [4, 5], [2, 4, 5], [1, 4, 5], [2, 1, 4, 5]]
