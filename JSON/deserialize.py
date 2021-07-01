@@ -4,21 +4,25 @@ Program to deserialize an object.
 from serialize import Student, Address
 import json
 
-def object_hook(d):
-    if '__class__' in d:
-        class_name = d.pop('__class__')
-        module_name = d.pop('__module__')
-        module = __import__(module_name)
-        class_ = getattr(module, class_name)
-        args = dict((key, value) for key, value in d.items())
-        instance = class_(**args)
-    else:
-        instance = d
-    return instance
+class MyJSONDecoder(json.JSONDecoder):
+    def __init__(self, *args, **kwargs):
+        json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
+
+    def object_hook(self, d):
+        if '__class__' in d:
+            class_name = d.pop('__class__')
+            module_name = d.pop('__module__')
+            module = __import__(module_name)
+            class_ = getattr(module, class_name)
+            args = dict((key, value) for key, value in d.items())
+            instance = class_(**args)
+        else:
+            instance = d
+        return instance
 
 if __name__ == '__main__':
     f = open('myfile.json', )
-    studentDecoded = json.load(f, object_hook=object_hook)
+    studentDecoded = json.load(f, cls=MyJSONDecoder)
     f.close()
 
     print("Name:",studentDecoded.name,"\n",

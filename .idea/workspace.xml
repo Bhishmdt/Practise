@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1baf172d-2e12-4dad-8938-d5f01c75dfed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JSON/deserialize.py" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/deserialize.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +41,7 @@
       <recent name="$PROJECT_DIR$/DynamicProgramming" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.serialize">
+  <component name="RunManager" selected="Python.deserialize">
     <configuration name="ContinuousSubarraySum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practise" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.serialize" />
         <item itemvalue="Python.deserialize" />
+        <item itemvalue="Python.serialize" />
         <item itemvalue="Python.GroupAnagrams" />
         <item itemvalue="Python.ContinuousSubarraySum" />
         <item itemvalue="Python.ProductofArrayExceptSelf" />
