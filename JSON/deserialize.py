@@ -3,23 +3,6 @@ Program to deserialize an object.
 """
 from serialize import Student, Address
 import json
-import sys
-
-class MyJSONDecoder(json.JSONDecoder):
-    def __init__(self, *args, **kwargs):
-        json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
-
-    def object_hook(self, d):
-        if '__class__' in d:
-            class_name = d.pop('__class__')
-            module_name = d.pop('__module__')
-            module = __import__(module_name)
-            class_ = getattr(module, class_name)
-            args = dict((key.encode('ascii'), value) for key, value in d.items())
-            instance = class_(**args)
-        else:
-            instance = d
-        return instance
 
 def object_hook(d):
     if '__class__' in d:
