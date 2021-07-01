@@ -1,0 +1,1 @@
+{"__class__": "Student", "__module__": "__main__", "name": "Rakesh", "age": 18, "marks": [33.5, 44, 55, 66, 77], "address": {"__class__": "Address", "__module__": "__main__", "city": "Pune", "pincode": 55555}}
