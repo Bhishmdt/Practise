@@ -3,6 +3,7 @@ Program to deserialize an object.
 """
 from serialize import Student, Address
 import json
+import sys
 
 class MyJSONDecoder(json.JSONDecoder):
     def __init__(self, *args, **kwargs):
@@ -36,6 +37,7 @@ if __name__ == '__main__':
     f = open('myfile.json', )
     studentDecoded = json.load(f, object_hook=object_hook)
     f.close()
+
     print("Name:",studentDecoded.name,"\n",
           "Age:",studentDecoded.age,"\n",
           "Marks:",studentDecoded.marks,"\n",

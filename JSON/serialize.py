@@ -27,8 +27,12 @@ if __name__ == '__main__':
     objAdd = Address("Pune", 55555)
     objStudent = Student("Rakesh", 18, [33.5, 44, 55, 66, 77], objAdd)
 
-    print(json.dumps(objStudent, cls=MyJSONEncoder))
+    J = json.dumps(objStudent, cls=MyJSONEncoder)
+    print(J)
     # Prints {"__class__": "Student", "__module__": "__main__", "name": "Rakesh", "age": 18, "marks": [33.5, 44, 55, 66, 77], "address": {"__class__": "Address", "__module__": "__main__", "city": "Pune", "pincode": 55555}}
+    print(len(J))
+    # Prints 209
+    # Size of file is 209 bytes
 
     out_file = open("myfile.json", "w")
     json.dump(objStudent, out_file, cls=MyJSONEncoder)
