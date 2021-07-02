@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1baf172d-2e12-4dad-8938-d5f01c75dfed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/deserialize.py" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/deserialize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON/deserialize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON/myfile.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON/serialize.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +43,8 @@
       <recent name="$PROJECT_DIR$/DynamicProgramming" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.deserialize">
-    <configuration name="ContinuousSubarraySum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.3Sum">
+    <configuration name="3Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -50,11 +52,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/prefixSum" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sort" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prefixSum/ContinuousSubarraySum.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sort/3Sum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -63,7 +65,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GroupAnagrams" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RepeatedDNASequences" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,11 +73,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HashTable" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Strings" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HashTable/GroupAnagrams.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Strings/RepeatedDNASequences.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +86,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ProductofArrayExceptSelf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="deserialize (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +94,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/prefixSum" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Serializers/Pickle" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prefixSum/ProductofArrayExceptSelf.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Serializers/Pickle/deserialize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="serialize" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="serialize (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,11 +136,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/JSON" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Serializers/Pickle" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JSON/serialize.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Serializers/Pickle/serialize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.3Sum" />
+        <item itemvalue="Python.RepeatedDNASequences" />
+        <item itemvalue="Python.deserialize (1)" />
+        <item itemvalue="Python.serialize (1)" />
         <item itemvalue="Python.deserialize" />
-        <item itemvalue="Python.serialize" />
-        <item itemvalue="Python.GroupAnagrams" />
-        <item itemvalue="Python.ContinuousSubarraySum" />
-        <item itemvalue="Python.ProductofArrayExceptSelf" />
       </list>
     </recent_temporary>
   </component>
