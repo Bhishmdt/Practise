@@ -5,6 +5,10 @@ Return an array of integers answer, where answer[i] = next_larger(node_{i+1}).
 Note that in the example inputs (not outputs) below, arrays such as [2,1,5] represent the serialization of a linked list with a head node value of 2, second node value of 1, and third node value of 5.
 """
 
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 def nextLargerNodes(head):
     # Go to the last node and check backwards if prev value is greater than current value
@@ -14,47 +18,28 @@ def nextLargerNodes(head):
     while head:
         nums.append(head.val)
         head = head.next
-    currmax = [nums[-1]]
-    last_num = nums[-1]
-    nums[-1] = 0
-    if len(nums) == 1:
-        return nums
-    for i in range(len(nums) - 2, -1, -1):
-        temp = nums[i]
-        if nums[i] > last_num:
-            currmax.append(nums[i])
-        for j in range(len(currmax) - 1, -1, -1):
-            if nums[i] < currmax[j]:
-                nums[i] = currmax[j]
-                continue
-        if nums[i] > currmax[0]:
-            currmax = [nums[i]]
-            nums[i] = 0
-        last_num = temp
 
-    return nums
+    pos = -1
+    stack = []
+    ans = []
 
-def abc(nums):
-    currmax = [nums[-1]]
-    last_num = nums[-1]
-    nums[-1] = 0
-    if len(nums) == 1:
-        return nums
-    for i in range(len(nums) - 2, -1, -1):
-        temp = nums[i]
-        if nums[i] > last_num:
-            currmax.append(nums[i])
-        for j in range(len(currmax) - 1, -1, -1):
-            print(i, nums[i], j, currmax)
-            if nums[i] < currmax[j]:
-                nums[i] = currmax[j]
-                break
-        if nums[i] > currmax[0]:
-            currmax = [nums[i]]
-            nums[i] = 0
-        last_num = temp
-    print(nums)
+    for i in range(len(nums)):
+        pos += 1
+        ans.append(0)
+        while stack and stack[-1][1] < nums[i]:
+            idx, _ = stack.pop()
+            ans[idx] = nums[i]
+
+        stack.append((pos, nums[i]))
+    return ans
 
 if __name__ == '__main__':
-    nums = [1, 7, 5, 1, 9, 2, 5, 1]
-    abc(nums)
+    head = ListNode(1)
+    head.next = ListNode(7)
+    head.next.next = ListNode(5)
+    head.next.next.next = ListNode(1)
+    head.next.next.next.next = ListNode(9)
+    head.next.next.next.next.next = ListNode(2)
+    head.next.next.next.next.next.next = ListNode(5)
+    head.next.next.next.next.next.next.next = ListNode(1)
+    print(nextLargerNodes(head))
