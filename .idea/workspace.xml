@@ -42,7 +42,7 @@
       <recent name="$PROJECT_DIR$/DynamicProgramming" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MaxDifference">
+  <component name="RunManager" selected="Python.ShortestPath">
     <configuration name="FindCommomElements" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practise" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="rotate_180" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ShortestPath" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,7 +139,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Matrix/rotate_180.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Matrix/ShortestPath.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ShortestPath" />
         <item itemvalue="Python.MaxDifference" />
         <item itemvalue="Python.LargestSquareSubMatrix" />
         <item itemvalue="Python.FindRowWithMaxOnes" />
         <item itemvalue="Python.FindCommomElements" />
-        <item itemvalue="Python.rotate_180" />
       </list>
     </recent_temporary>
   </component>
