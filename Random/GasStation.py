@@ -16,11 +16,13 @@ def canCompleteCircuit(gas, cost) -> int:
         if gas[i] - cost[i] >= 0 and curr_reserve < 0:
             curr_reserve = gas[i] - cost[i]
             start_station = i
-        elif gas[i] - cost[i] >= 0 and curr_reserve >= 0:
-            curr_reserve += gas[i] - cost[i]
-        elif gas[i] - cost[i] < 0 and curr_reserve + gas[i] - cost[i] < 0:
-            curr_reserve = -1
-        elif gas[i] - cost[i] < 0 and curr_reserve + gas[i] - cost[i] >= 0:
+        # if gas[i] - cost[i] >= 0 and curr_reserve >= 0:
+        #     curr_reserve += gas[i] - cost[i]
+        # if gas[i] - cost[i] < 0 and curr_reserve + gas[i] - cost[i] < 0:
+        #     curr_reserve = -1
+        # if gas[i] - cost[i] < 0 and curr_reserve + gas[i] - cost[i] >= 0:
+        #     curr_reserve += gas[i] - cost[i]
+        else:
             curr_reserve += gas[i] - cost[i]
     if full_reserve >= 0:
         return start_station
