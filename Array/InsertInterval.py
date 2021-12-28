@@ -10,9 +10,9 @@ def insert(intervals, newInterval):
     left, right = [], []
     for e in intervals:
         if e[1] < start:
-            left += e,
+            left.append(e)
         elif e[0] > end:
-            right += e,
+            right.append(e)
         else:
             start = min(start, e[0])
             end = max(end, e[1])

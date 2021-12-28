@@ -6,6 +6,7 @@ def rotate180(matrix):
     for i in range(len(matrix) // 2):
         for j in range(len(matrix)):
             matrix[i][j], matrix[~i][~j] = matrix[~i][~j], matrix[i][j]
+    print(matrix)
 
     if len(matrix) // 2 == 0:
         i = len(matrix) // 2
